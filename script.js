@@ -1,7 +1,15 @@
-import { jsPDF } from "jspdf";
+function getContentInPDF() {
 
-// Default export is a4 paper, portrait, using millimeters for units
-const doc = new jsPDF();
+    let fname = document.getElementById('fname').value;
 
-doc.text("Hello world!", 10, 10);
-doc.save("a4.pdf");
+    let lname = document.getElementById('lname').value;
+
+    let pass = document.getElementById('pass').value;
+
+    
+    let element = document.createElement('div');
+
+    element.innerHTML = '<h1>Form Data</h1>' + '<br>' + fname + lname + pass;
+
+    html2pdf().from(element).save();
+}

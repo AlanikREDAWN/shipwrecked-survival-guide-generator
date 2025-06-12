@@ -23,101 +23,90 @@
         
         <button>Submit</button> -->
 
-        <div>
-            <label for="fname">first name:</label>
-            <input type="text" 
-                    for="fname" 
-                    name="fname" 
-                    placeholder="Spongebob" 
-                    required>
-        </div>
-        
-        <br>
+        <label for="fname">first name:</label>
+        <input type="text"
+                id="fname"
+                for="fname" 
+                name="fname" 
+                placeholder="Spongebob" 
+                required><br><br>
 
-        <div>
-            <label for="lname">last name:</label>
-            <input type="text" for="lname" name="lname" placeholder="Squarepants" required>
-        </div>
+        <label for="lname">last name:</label>
+        <input type="text"
+                id="lname"
+                for="lname" 
+                name="lname" 
+                placeholder="Squarepants" 
+                required><br><br>
 
-        <br>
+        <label for="pass">password:</label>
+        <input type="password" 
+                id="pass"
+                for="pass" 
+                name="pass" 
+                maxlength="12" 
+                required><br><br>
 
-        <div>
-            <label for="pass">password:</label>
-            <input type="password" for="pass" name="pass" maxlength="12" required>
-        </div>
+        <label for="email">email:</label>
+        <input type="email"
+                for="email" 
+                name="email" 
+                placeholder="SPants@gmail.com"><br><br>
 
-        <br>
+        <label for="phone">phone #:</label>
+        <input type="tel" 
+                for="phone" 
+                name="phone" 
+                placeholder="(123)-456-7890"><br><br>
 
-        <div>
-            <label for="email">email:</label>
-            <input type="email" for="email" name="email" placeholder="SPants@gmail.com">
-        </div>
+        <label for="bdate">birthdate:</label>
+        <input type="date" 
+                for="bdate" 
+                name="bdate"><br><br>
 
-        <br>
+        <label for="quantity">quantity:</label>
+        <input type="number" 
+                for="quantity" 
+                name="quantity" 
+                min="0" 
+                max="99" 
+                value="1"><br><br>
 
-        <div>
-            <label for="phone">phone #:</label>
-            <input type="tel" for="phone" name="phone" placeholder="(123)-456-7890">
-        </div>
+        <label for="title">title:</label><br>
 
-        <br>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" 
+                id="Mr." 
+                name="title" 
+                value="Mr.">
 
-        <div>
-            <label for="bdate">birthdate:</label>
-            <input type="date" for="bdate" name="bdate">
-        </div>
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" 
+                id="Mrs." 
+                name="title" 
+                value="Mrs.">
 
-        <br>
+        <label for="PhD.">PhD.</label>
+        <input type="radio" 
+                id="PhD." 
+                name="title" 
+                value="PhD."><br><br>
 
-        <div>
-            <label for="quantity">quantity:</label>
-            <input type="number" for="quantity" name="quantity" min="0" max="99" value="1">
-        </div>
+        <label for="payment">payment:</label>
+        <select name="payment" id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br><br>
 
-        <br>
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" 
+                id="subscribe" 
+                name="subscribe"><br><br>
 
-        <div>
-            <label for="title">title:</label>
+        <input type="reset">
 
-            <label for="Mr.">Mr.</label>
-            <input type="radio" id="Mr." name="title" value="Mr.">
-
-            <label for="Mrs.">Mrs.</label>
-            <input type="radio" id="Mrs." name="title" value="Mrs.">
-
-            <label for="PhD.">PhD.</label>
-            <input type="radio" id="PhD." name="title" value="PhD.">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="payment">payment:</label>
-            <select name="payment" id="payment">
-                <option value="visa">visa</option>
-                <option value="mastercard">mastercard</option>
-                <option value="giftcard">giftcard</option>
-            </select>
-        </div>
-
-        <br>
-
-        <div>
-            <label for="subscribe">subscribe:</label>
-            <input type="checkbox" id="subscribe" name="subscribe">
-        </div>
-
-        <br>
-
-        <div>
-            <input type="reset">
-        </div>
-
-        <br>
-
-        <div>
-            <input type="submit">
-        </div>
+        <input type="button" value="submit" onclick="getContentInPDF()">
         
     </form>
     
